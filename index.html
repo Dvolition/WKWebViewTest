@@ -7,8 +7,8 @@
   <body>
     <form action="https://script.google.com/macros/s/AKfycbz9su8Dsi87M9TR4trvKT322TiIlqaj7fpx89C6Wjm7Jq3K8GI/exec" method="post" target="_blank">
       <h1>
-      methodName:<br>
-      <select id="methodName" name="methodName"style="WIDTH: 500px; HEIGHT: 50px; font-size : 30px" >
+      method_name:<br>
+      <select id="method_name" name="method_name"style="WIDTH: 500px; HEIGHT: 50px; font-size : 30px" >
         <option>sign_up</option>
         <option>sign_in</option>
         <option>pay_coin</option>
@@ -75,7 +75,7 @@
           return result;
           }
         };
-        var request_data = "methodName="+$("#methodName").val()+"&e1='"+$("#e1").val()+"'&e2='"+$("#e2").val()+"'&e3='"+$("#e3").val()+"'&e4='"+$("#e4").val()+"'&e5='"+$("#e5").val()+"'&api_pass='"+$("#api_pass").val()+"'";
+        var request_data = "method_name="+$("#method_name").val()+"&e1="+$("#e1").val()+"&e2="+$("#e2").val()+"&e3="+$("#e3").val()+"&e4="+$("#e4").val()+"&e5="+$("#e5").val()+"&api_pass="+$("#api_pass").val()+"";
         request.send(request_data);
         }
 
