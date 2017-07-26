@@ -1,15 +1,83 @@
-
+<!DOCTYPE HTML>
 <html>
-<title>作成されたページ</title>
-<head>
-<script language="javascript" type="text/javascript">
-window.webkit.messageHandlers.callbackHandler.postMessage('Hello Native!');
+  <head>
+    <title>クリプ</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form action="https://script.google.com/macros/s/AKfycbz9su8Dsi87M9TR4trvKT322TiIlqaj7fpx89C6Wjm7Jq3K8GI/exec" method="post" target="_blank">methodName: 
+      <select id="methodName" name="methodName">
+        <option>sign_up</option>
+        <option>sign_in</option>
+        <option>pay_coin</option>
+        <option></option>
+      </select>
+      <p>e1：
+        <input id="e1" type="text" name="e1" value="1000001" size="100" />
+      </p>
+      <p>e2：
+        <input id="e2" type="text" name="e2" value="100" size="100" />
+      </p>
+      <p>e3：
+        <input id="e3" type="text" name="e3" value="100" size="100" />
+      </p>
+      <p>e4：
+        <input id="e4" type="text" name="e4" value="100" size="100" />
+      </p>
+      <p>e5：
+        <input id="e5" type="text" name="e5" value="100" size="100" />
+      </p>
+      <p>api_pass：
+        <input id="api_pass" type="text" name="api_pass" value="pass" size="100" />
+      </p>
+      <p>
+        <input id="save" type="button" name="submit" value="送信" />
+      </p>
+    </form>
 
-</script>
-</head>
-<body>
-	文章<br>
-	<input id="Submit1" type="button" value="ボタン" onclick="return hoge()" />
+    <textarea id="response"></textarea>
 
-</body>
-<html>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Data Load
+      $(function(){
+        $("#api_pass").val(window.localStorage.getItem('text'));
+      });
+
+      $("#save").click(function(){
+        window.localStorage.setItem('text',  $("#api_pass").val());
+        post()
+      });
+
+      function post(){
+        var url = "https://script.google.com/macros/s/AKfycbz9su8Dsi87M9TR4trvKT322TiIlqaj7fpx89C6Wjm7Jq3K8GI/exec"; // リクエスト先URL
+        var request = new XMLHttpRequest();
+        request.open('POST', url , true);
+        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        request.onreadystatechange = function () {
+          if (request.readyState != 4) {
+          // リクエスト中
+          } else if (request.status != 200) {
+          // 失敗
+          } else {
+          // 取得成功
+          var result = request.responseText;
+          $("#response").val(result);
+
+          return result;
+          }
+        };
+        var request_data = "methodName="+$("#methodName").val()+"&e1='"+$("#e1").val()+"'&e2='"+$("#e2").val()+"'&e3='"+$("#e3").val()+"'&e4='"+$("#e4").val()+"'&e5='"+$("#e5").val()+"'&api_pass='"+$("#api_pass").val()+"'";
+        request.send(request_data);
+        }
+
+    </script>
+
+  </body>
+</html>
