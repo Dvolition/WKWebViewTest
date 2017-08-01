@@ -83,11 +83,22 @@
     <script>
       // Data Load
       $(function(){
-        $("#api_pass").val(window.localStorage.getItem('text'));
+        $("#e1").val(window.localStorage.getItem('e1_text'));
+        $("#e2").val(window.localStorage.getItem('e2_text'));
+        $("#e3").val(window.localStorage.getItem('e3_text'));
+        $("#e4").val(window.localStorage.getItem('e4_text'));
+        $("#e5").val(window.localStorage.getItem('e5_text'));
+        $("#api_pass").val(window.localStorage.getItem('api_pass_text'));
       });
 
       $("#save").click(function(){
-        window.localStorage.setItem('text',  $("#api_pass").val());
+        window.localStorage.setItem('e1_text',  $("#e1").val());
+        window.localStorage.setItem('e2_text',  $("#e2").val());
+        window.localStorage.setItem('e3_text',  $("#e3").val());
+        window.localStorage.setItem('e4_text',  $("#e4").val());
+        window.localStorage.setItem('e5_text',  $("#e5").val());
+
+        window.localStorage.setItem('api_pass_text',  $("#api_pass").val());
         post()
       });
 
