@@ -1,4 +1,4 @@
-/* --- 全体の背景・テキスト --- */
+﻿/* --- 全体の背景・テキスト --- */
 body {
 margin: 0;
 padding: 0;
@@ -15,7 +15,7 @@ a:active { color: #ff0000; }
 
 /* --- コンテナ --- */
 #container {
-width: 900px; /* ページの幅 */
+width: 780px; /* ページの幅 */
 margin: 0 auto; /* センタリング */
 background: url(sidebar_300.gif) repeat-y right; /* サイドバーの背景画像 */
 background-color: #ffffff; /* メインカラムの背景色 */
