@@ -2,78 +2,80 @@
 <html lang="ja">
   <head>
     <title>d_debug</title>
-
     <meta name="viewport" content="width=device-width,initial-scale=0.4,minimum-scale=0.4,maximum-scale=0.4,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="body.css">
     <link rel="shortcut icon" href="favicon.ico">
-
   </head>
   <body>
     <!-- コンテナ開始 -->
     <div id="container">
       <!-- ヘッダ開始 -->
-<div id="header">
-［ヘッダ］
-</div>
-<!-- ヘッダ終了 -->
-
-<!-- ナビゲーション開始 -->
-<div id="nav">
-［サイドバー］
-</div>
-<!-- ナビゲーション終了 -->
-
-<!-- メインカラム開始 -->
-<div id="content">
-
-
-      <h1>method_name:
-      <br>
-      <select id="method_name" name="method_name"style="WIDTH: 460px; HEIGHT: 50px; font-size : 30px" >
-        <option>sign_up</option>
-        <option>sign_in</option>
-        <option>pay_coin</option>
-        <option>send_coin</option>
-        <option>gacha</option>
-        <option></option>
-      </select>
-      <p>e1：
+      <div id="header">［ヘッダ］ </div>
+      <!-- ヘッダ終了 -->
+      <!-- ナビゲーション開始 -->
+      <div id="nav">［サイドバー］ 
         <br>
-        <input id="e1" type="text" name="e1" value="1000001" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
-      </p>
-      <p>e2：
-        <br>
-        <input id="e2" type="text" name="e2" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
-      </p>
-      <p>e3：
-        <br>
-        <input id="e3" type="text" name="e3" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
-      </p>
-      <p>e4：
-        <br>
-        <input id="e4" type="text" name="e4" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
-      </p>
-      <p>e5：
-        <br>
-        <input id="e5" type="text" name="e5" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
-      </p>
-      <p>*api_pass：
-        <br>
-        <input id="api_pass" type="text" name="api_pass" value="pass" style="WIDTH: 420px; HEIGHT: 20px; font-size : 15px" />
-      </p>
-      <p>
-        <input id="save" type="button" name="submit" value="送信" style="WIDTH: 420px; HEIGHT: 100px; font-size : 50px" />
-      </p>
-      <textarea id="response" style="WIDTH: 460px; HEIGHT: 800px; font-size : 30px" /></textarea>
+        <textarea id="save_data_1" name="save_data_1" cols=40 rows=5></textarea>
+        <input id="save_1" type="button" name="save_1" value="保存" style="WIDTH: 90px; HEIGHT: 40px; font-size : 20px" />
+        <input id="load_1" type="button" name="load_1" value="読み込み" style="WIDTH: 170px; HEIGHT: 40px; font-size : 20px" />
+        <hr>
+        <textarea id="save_data_2" name="save_data_2" cols=40 rows=5></textarea>
+        <input id="save_2" type="button" name="save_2" value="保存" style="WIDTH: 90px; HEIGHT: 40px; font-size : 20px" />
+        <input id="load_2" type="button" name="load_2" value="読み込み" style="WIDTH: 170px; HEIGHT: 40px; font-size : 20px" />
+        <hr>
+        <textarea id="save_data_3" name="save_data_3" cols=40 rows=5></textarea>
+        <input id="save_3" type="button" name="save_3" value="保存" style="WIDTH: 90px; HEIGHT: 40px; font-size : 20px" />
+        <input id="load_3" type="button" name="load_3" value="読み込み" style="WIDTH: 170px; HEIGHT: 40px; font-size : 20px" />
+        <hr>
       </div>
-<!-- メインカラム終了 -->
-
+      <!-- ナビゲーション終了 -->
+      <!-- メインカラム開始 -->
+      <div id="content">
+        <h1>method_name: 
+        <br>
+        <select id="method_name" name="method_name"style="WIDTH: 460px; HEIGHT: 50px; font-size : 30px" >
+          <option>sign_up</option>
+          <option>sign_in</option>
+          <option>pay_coin</option>
+          <option>send_coin</option>
+          <option>gacha</option>
+          <option></option>
+        </select>
+        <p>e1： 
+          <br>
+          <input id="e1" type="text" name="e1" value="1000001" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
+        </p>
+        <p>e2： 
+          <br>
+          <input id="e2" type="text" name="e2" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
+        </p>
+        <p>e3： 
+          <br>
+          <input id="e3" type="text" name="e3" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
+        </p>
+        <p>e4： 
+          <br>
+          <input id="e4" type="text" name="e4" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
+        </p>
+        <p>e5： 
+          <br>
+          <input id="e5" type="text" name="e5" value="100" style="WIDTH: 420px; HEIGHT: 50px; font-size : 30px" />
+        </p>
+        <p>*api_pass： 
+          <br>
+          <input id="api_pass" type="text" name="api_pass" value="pass" style="WIDTH: 420px; HEIGHT: 20px; font-size : 15px" />
+        </p>
+        <p>
+          <input id="save" type="button" value="送信" style="WIDTH: 420px; HEIGHT: 100px; font-size : 50px" />
+        </p>
+        <textarea id="response" style="WIDTH: 460px; HEIGHT: 800px; font-size : 30px" /></textarea>
+      </div>
+      <!-- メインカラム終了 -->
       <!-- フッタ開始 -->
       <div id="footer">［フッタ］ </div>
       <!-- フッタ終了 -->
     </div>
     <!-- コンテナ終了 -->
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -90,6 +92,24 @@
         $("#e4").val(window.localStorage.getItem('e4_text'));
         $("#e5").val(window.localStorage.getItem('e5_text'));
         $("#api_pass").val(window.localStorage.getItem('api_pass_text'));
+        $("#save_data_1").val(
+          "e1:" + window.localStorage.getItem('e1_1_text') + "\n"
+          + "e2:" + window.localStorage.getItem('e2_1_text') + "\n"
+          + "e3:" + window.localStorage.getItem('e3_1_text') + "\n"
+          + "e4:" + window.localStorage.getItem('e4_1_text') + "\n"
+          + "e5:" + window.localStorage.getItem('e5_1_text'));
+        $("#save_data_2").val(
+          "e1:" + window.localStorage.getItem('e1_2_text') + "\n"
+          + "e2:" + window.localStorage.getItem('e2_2_text') + "\n"
+          + "e3:" + window.localStorage.getItem('e3_2_text') + "\n"
+          + "e4:" + window.localStorage.getItem('e4_2_text') + "\n"
+          + "e5:" + window.localStorage.getItem('e5_2_text'));
+        $("#save_data_3").val(
+          "e1:" + window.localStorage.getItem('e1_3_text') + "\n"
+          + "e2:" + window.localStorage.getItem('e2_3_text') + "\n"
+          + "e3:" + window.localStorage.getItem('e3_3_text') + "\n"
+          + "e4:" + window.localStorage.getItem('e4_3_text') + "\n"
+          + "e5:" + window.localStorage.getItem('e5_3_text'));
       });
 
       $("#save").click(function(){
@@ -124,6 +144,69 @@
         var request_data = "method_name="+$("#method_name").val()+"&e1="+$("#e1").val()+"&e2="+$("#e2").val()+"&e3="+$("#e3").val()+"&e4="+$("#e4").val()+"&e5="+$("#e5").val()+"&api_pass="+$("#api_pass").val()+"";
         request.send(request_data);
         }
+
+      $("#save_1").click(function(){
+        window.localStorage.setItem('e1_1_text',  $("#e1").val());
+        window.localStorage.setItem('e2_1_text',  $("#e2").val());
+        window.localStorage.setItem('e3_1_text',  $("#e3").val());
+        window.localStorage.setItem('e4_1_text',  $("#e4").val());
+        window.localStorage.setItem('e5_1_text',  $("#e5").val());
+        $("#save_data_1").val(
+          "e1:" + window.localStorage.getItem('e1_1_text') + "\n"
+          + "e2:" + window.localStorage.getItem('e2_1_text') + "\n"
+          + "e3:" + window.localStorage.getItem('e3_1_text') + "\n"
+          + "e4:" + window.localStorage.getItem('e4_1_text') + "\n"
+          + "e5:" + window.localStorage.getItem('e5_1_text'));
+      });
+      $("#load_1").click(function(){
+        $("#e1").val(window.localStorage.getItem('e1_1_text'));
+        $("#e2").val(window.localStorage.getItem('e2_1_text'));
+        $("#e3").val(window.localStorage.getItem('e3_1_text'));
+        $("#e4").val(window.localStorage.getItem('e4_1_text'));
+        $("#e5").val(window.localStorage.getItem('e5_1_text'));
+      });
+
+      $("#save_2").click(function(){
+        window.localStorage.setItem('e1_2_text',  $("#e1").val());
+        window.localStorage.setItem('e2_2_text',  $("#e2").val());
+        window.localStorage.setItem('e3_2_text',  $("#e3").val());
+        window.localStorage.setItem('e4_2_text',  $("#e4").val());
+        window.localStorage.setItem('e5_2_text',  $("#e5").val());
+        $("#save_data_2").val(
+          "e1:" + window.localStorage.getItem('e1_2_text') + "\n"
+          + "e2:" + window.localStorage.getItem('e2_2_text') + "\n"
+          + "e3:" + window.localStorage.getItem('e3_2_text') + "\n"
+          + "e4:" + window.localStorage.getItem('e4_2_text') + "\n"
+          + "e5:" + window.localStorage.getItem('e5_2_text'));
+      });
+      $("#load_2").click(function(){
+        $("#e1").val(window.localStorage.getItem('e1_2_text'));
+        $("#e2").val(window.localStorage.getItem('e2_2_text'));
+        $("#e3").val(window.localStorage.getItem('e3_2_text'));
+        $("#e4").val(window.localStorage.getItem('e4_2_text'));
+        $("#e5").val(window.localStorage.getItem('e5_2_text'));
+      });
+
+      $("#save_3").click(function(){
+        window.localStorage.setItem('e1_3_text',  $("#e1").val());
+        window.localStorage.setItem('e2_3_text',  $("#e2").val());
+        window.localStorage.setItem('e3_3_text',  $("#e3").val());
+        window.localStorage.setItem('e4_3_text',  $("#e4").val());
+        window.localStorage.setItem('e5_3_text',  $("#e5").val());
+        $("#save_data_3").val(
+          "e1:" + window.localStorage.getItem('e1_3_text') + "\n"
+          + "e2:" + window.localStorage.getItem('e2_3_text') + "\n"
+          + "e3:" + window.localStorage.getItem('e3_3_text') + "\n"
+          + "e4:" + window.localStorage.getItem('e4_3_text') + "\n"
+          + "e5:" + window.localStorage.getItem('e5_3_text'));
+      });
+      $("#load_3").click(function(){
+        $("#e1").val(window.localStorage.getItem('e1_3_text'));
+        $("#e2").val(window.localStorage.getItem('e2_3_text'));
+        $("#e3").val(window.localStorage.getItem('e3_3_text'));
+        $("#e4").val(window.localStorage.getItem('e4_3_text'));
+        $("#e5").val(window.localStorage.getItem('e5_3_text'));
+      });
       </script>
   </body>
-</html> 
+</html>
